@@ -4,6 +4,19 @@
         <title>Articles</title>
     </head>
     <body>
+
+
+
+        <div class="articles">
+            {% for article in articles %}
+            <div class="article">
+                <h2><a href="#">{{ article.title }}</a> </h2>
+                <p>{{article.body}}</p>
+                <p>{{article.date}}</p>
+            </div>
+            </div>
+            {% endfor %}
+        </div>
         <h1>
             Articles List
         </h1>
